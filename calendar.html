@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <!--link to stylesheet-->
+    <link href="styles/calendar.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="join-our-troop-title">
+        <h1>Troop 73 Calendar</h1>
+      </div>
+    </header>
+
+    <!--Main Content Header-->
+    <div class="nav-container">
+      <div class="logo"><img src="./images/boy-scouts-logo.png" class="logo-icon" alt="bsa-logo">Troop 73</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li id="calendar"><a href="#calendar">Calendar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--Main Content-->
+
+    <div class="main">
+      <div class="main-title">
+        <h1>Troop Calendar</h1>
+        <p>Stay up-to-date with all troop meetings, activities, and events</p>
+      </div>
+      <div class="monthText"></div>
+      <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=c9571d30762224a1199b4c5ec3ce00c2480bef83429213c619928bda381ab265%40group.calendar.google.com&ctz=UTC&showTitle=0&showDate=0&showCalendars=0&showPrint=0&hl=en&mode=MONTH&showTz=0" 
+          style="border: 0" 
+          width="800" 
+          height="600" 
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
+      </div>
+    </div>
+
+    <script src="scripts/calendar.js" type="module"></script>
+  </body>
+</html>
