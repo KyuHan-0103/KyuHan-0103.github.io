@@ -8,6 +8,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f5f5f5;
   color: #333;
+  line-height: 1.6; /* Added for better readability */
 }
 
 .header{
@@ -22,6 +23,7 @@ body {
   box-shadow: 5px 15px 40px rgba(0,0,0,0.15);
   padding: 1rem 2rem;
   border-radius: 20px;
+  background: white; /* Added background for consistency */
 }
 
 .join-our-troop-title h1{
@@ -45,6 +47,7 @@ body {
   align-items: center;
   font-size: 1.8rem;
   font-weight: bold;
+  color: white; /* Added explicit color */
 }
 
 .logo-icon{
@@ -66,16 +69,16 @@ body {
 .nav-menu a{
   color: white;
   text-decoration: none;
+  transition: all 0.3s ease; /* Improved hover transition */
 }
 
 .nav-menu a:hover{
-  color: black;
+  color: #ffd700; /* Better hover color */
   cursor: pointer;
 }
 
 .nav-menu li:hover{
-  transform: scale(1.1);
-  transform: translateY(-1px);
+  transform: scale(1.1) translateY(-1px); /* Combined transforms */
 }
 
 /* Hero Section */
@@ -86,37 +89,44 @@ body {
   background-position: center;
   margin: 0 3rem;
   color: white;
-  padding: 2rem 0;
+  padding: 3rem 2rem; /* Increased padding for better visual impact */
+  border-radius: 0 0 20px 20px; /* Added rounded bottom corners */
 }
 
 .hero-join h1{
-  font-size: 2.5rem;
+  font-size: 2.8rem; /* Increased size */
   margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added text shadow */
 }
 
 .hero-join p{
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* Increased size */
   padding-bottom: 1rem;
+  opacity: 0.95; /* Slight transparency for elegance */
 }
 
 .main{
   margin: 0 3rem;
   background: white;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding: 2rem; /* More consistent padding */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Added subtle shadow */
 }
 
 .main-title {
   margin-top: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem; /* Slightly larger */
   color: #2c5530;
   margin-bottom: 3rem;
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Added gradient text effect */
 }
 
 .steps-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Increased min width */
   gap: 2rem;
   margin: 2rem;
   margin-bottom: 4rem;
@@ -124,51 +134,56 @@ body {
 
 .step-section{
   background: white;
-  padding: 1.8rem 1.4rem;
+  padding: 2rem 1.5rem; /* Increased padding */
   text-align: center;
   border: 2px solid #e8f5e8;
   border-radius: 15px;
   position: relative;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0.5px 1px rgba(0,0,0,0.15);
+  transition: all 0.3s ease; /* Improved transition */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Better shadow */
 }
 
 .step-section:hover{
-  transform: translateY(-5px);
+  transform: translateY(-8px); /* More pronounced hover effect */
   border: 2px solid #ff6b35;
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15); /* Colored shadow on hover */
 }
 
 .step-number{
   position: absolute;
-  top: -15px;
+  top: -18px; /* Adjusted position */
   left: 50%;
   transform: translateX(-50%);
-  background:#ff6b35;
+  background: #ff6b35;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 36px; /* Increased size */
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: white;
+  font-size: 1.1rem; /* Increased font size */
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3); /* Added shadow */
 }
-
 
 .step-section h3{
   color: #2c5530;
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Increased size */
+  margin: 1rem 0 0.8rem 0; /* Better spacing */
 }
 
 .step-section p{
   color: #666;
-  font-size: 0.95;
+  font-size: 1rem; /* Fixed typo and increased size */
+  line-height: 1.5; /* Better line spacing */
 }
 
 /* Info section */
 .info-grid{
   display: grid;
   margin: 1rem 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased min width */
   gap: 2rem;
 }
 
@@ -177,31 +192,42 @@ body {
   border-radius: 15px;
   border-left: 5px solid #2c5530;
   padding: 2rem;
+  transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .info-card h3{
   color: #2c5530;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem; /* Increased size */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space for emojis */
 }
 
 .info-list{
   list-style: none;
-  padding: none;
+  padding: 0; /* Fixed property name */
 }
 
 .info-list li{
-  padding: 0.5rem 0;
+  padding: 0.7rem 0; /* Increased padding */
   border-bottom: 1px solid rgba(44, 85, 48, 0.1); 
-  padding-left: 1.5rem;
+  padding-left: 1.8rem; /* Increased space for checkmark */
+  font-size: 1rem; /* Consistent font size */
 }
 
 .info-list li:before {
   content: "✓";
-  position: relative;
+  position: absolute;
   color: #ff6b35;
   font-weight: bold;
-  left: -6px;
+  left: 0;
+  margin-left: 0.5rem;
 }
 
 .info-list li:last-child {
@@ -212,8 +238,15 @@ body {
 .faq-section {
   background: #f8f9fa;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 2.5rem; /* Increased padding */
   margin: 3rem 0;
+}
+
+.faq-section h2 {
+  color: #2c5530;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .faq-item{
@@ -222,21 +255,32 @@ body {
   margin-bottom: 1rem;
   overflow: hidden;
   border: 1px solid #e0e0e0;
+  transition: box-shadow 0.3s ease; /* Added hover effect */
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .faq-question{
   background: #2c5530;
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem; /* Increased padding */
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #4a7c59;
 }
 
 .faq-answer{
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem; /* Increased padding */
   color: #666;
   line-height: 1.6;
 }
+
 /* Contact CTA */
 .contact-cta {
   background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
@@ -245,28 +289,39 @@ body {
   text-align: center;
   border-radius: 15px;
   margin: 3rem 0;
+  box-shadow: 0 8px 30px rgba(44, 85, 48, 0.2); /* Added shadow */
 }
 
 .contact-cta h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.2rem; /* Increased size */
 }
 
 .contact-cta p {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* Increased size */
   opacity: 0.9;
 }
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Increased min width */
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .contact-item {
   text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Added background */
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Added blur effect */
+}
+
+.contact-item h4 {
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .contact-icon {
@@ -286,23 +341,297 @@ body {
   display: inline-block;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); /* Added shadow */
 }
 
 .btn:hover {
   background: #e55a2b;
-  transform: translateY(-2px);
+  transform: translateY(-3px); /* Increased hover lift */
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4); /* Enhanced shadow on hover */
 }
 
-@media (max-width: 768px) {
-  .info-grid {
-      grid-template-columns: 1fr;
+/* ====== ENHANCED MOBILE RESPONSIVE STYLES ====== */
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .header, .nav-container, .main {
+    margin: 0 2rem;
   }
   
-  .nav-items {
-      display: none;
+  .info-grid {
+    margin: 1rem 2rem;
+  }
+  
+  .hero-join {
+    margin: 0 2rem;
+  }
+  
+  .steps-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2rem 1rem;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  .header, .nav-container, .main {
+    margin: 0 1rem;
+  }
+  
+  .join-our-troop-title {
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 1rem 0;
+  }
+  
+  .join-our-troop-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Navigation mobile fixes */
+  .nav-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  
+  .logo-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nav-menu li {
+    width: 100%;
+  }
+  
+  .nav-menu a {
+    display: block;
+    padding: 12px 15px;
+    min-height: 44px; /* Touch target size */
+    border-radius: 8px;
+  }
+  
+  .nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .nav-menu li:hover {
+    transform: none; /* Remove desktop hover effects */
+  }
+  
+  /* Hero section mobile */
+  .hero-join {
+    margin: 0 1rem;
+    padding: 2rem 1rem;
   }
   
   .hero-join h1 {
-      font-size: 2rem;
+    font-size: 2.2rem;
   }
+  
+  .hero-join p {
+    font-size: 1.1rem;
+  }
+  
+  /* Main content mobile */
+  .main {
+    padding: 1.5rem;
+  }
+  
+  .main-title {
+    font-size: 1.8rem;
+  }
+  
+  /* Steps grid mobile */
+  .steps-grid {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+    gap: 1.5rem;
+  }
+  
+  .step-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .step-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Info grid mobile */
+  .info-grid {
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* FAQ mobile */
+  .faq-section {
+    padding: 2rem 1rem;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .faq-question {
+    padding: 1rem;
+  }
+  
+  .faq-answer {
+    padding: 1rem;
+  }
+  
+  /* Contact CTA mobile */
+  .contact-cta {
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+  }
+  
+  .contact-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-item {
+    padding: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .header, .nav-container, .main {
+    margin: 0 0.5rem;
+  }
+  
+  .join-our-troop-title {
+    margin: 0.5rem 0.5rem 0;
+    padding: 0.6rem 1rem;
+  }
+  
+  .join-our-troop-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .nav-container {
+    padding: 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .hero-join {
+    margin: 0 0.5rem;
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .hero-join h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-join p {
+    font-size: 1rem;
+  }
+  
+  .main {
+    padding: 1rem;
+  }
+  
+  .main-title {
+    font-size: 1.6rem;
+  }
+  
+  .step-section {
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .step-number {
+    width: 32px;
+    height: 32px;
+    top: -16px;
+  }
+  
+  .info-grid {
+    margin: 1rem 0.5rem;
+  }
+  
+  .info-card {
+    padding: 1.2rem;
+  }
+  
+  .faq-section {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .contact-cta {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .contact-cta h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Landscape orientation fixes for mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .hero-join {
+    padding: 1.5rem 1rem;
+  }
+  
+  .hero-join h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nav-menu {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .nav-menu a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
