@@ -121,3 +121,190 @@ body {
 html{
   scroll-behavior: smooth;
 }
+
+/* ====== MOBILE RESPONSIVE STYLES ====== */
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .header, .nav-container, .main {
+    margin: 0 2rem;
+  }
+  
+  .calendar-container {
+    margin: 2rem 1.5rem;
+  }
+  
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  
+  /* Base mobile improvements */
+  body {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Header adjustments */
+  .header, .nav-container, .main {
+    margin: 0 1rem;
+  }
+  
+  .join-our-troop-title {
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 1rem 0;
+  }
+  
+  .join-our-troop-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Navigation mobile fixes */
+  .nav-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  
+  .logo-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nav-menu li {
+    width: 100%;
+  }
+  
+  .nav-menu a {
+    display: block;
+    padding: 12px 15px;
+    min-height: 44px; /* Touch target size */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .nav-menu li:hover {
+    transform: none; /* Remove desktop hover effects */
+  }
+  
+  /* Main content mobile fixes */
+  .main {
+    padding: 1.5rem 1rem 2rem;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .main-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-title p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Calendar mobile optimizations */
+  .calendar-container {
+    margin: 1.5rem 0.5rem;
+    padding-bottom: 85%; /* Taller aspect ratio for mobile */
+    border-radius: 15px;
+  }
+}
+
+/* Extra small screens (phones in portrait) */
+@media screen and (max-width: 480px) {
+  .header, .nav-container, .main {
+    margin: 0 0.5rem;
+  }
+  
+  .join-our-troop-title {
+    margin: 0.5rem 0.5rem 0;
+    padding: 0.6rem 1rem;
+  }
+  
+  .join-our-troop-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .nav-container {
+    padding: 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .nav-menu a {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .main {
+    padding: 1rem 0.8rem;
+  }
+  
+  .main-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  .main-title p {
+    font-size: 1rem;
+  }
+  
+  .calendar-container {
+    margin: 1rem 0.2rem;
+    padding-bottom: 90%; /* Even taller for very small screens */
+    border-radius: 10px;
+  }
+}
+
+/* Landscape orientation fixes for mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .calendar-container {
+    padding-bottom: 60%; /* Shorter in landscape */
+  }
+  
+  .main-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nav-menu {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .nav-menu a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
